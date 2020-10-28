@@ -2,7 +2,11 @@
   margin: 0;
   padding-top: 200px;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: black;
   padding-bottom: 50px;
+}
+
+.products {
+  width: 100vw;
 }

@@ -36,6 +36,14 @@
   justify-content: space-evenly;
 }
 
+.footer__secondContainer {
+  margin-top: 15px;
+}
+
+.footer__secondContainer > h4 {
+  margin-bottom: 10px;
+}
+
 .footer__title {
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -101,6 +109,12 @@
   font-size: 16px;
 }
 
+.footer__logo {
+  font-size: 8px;
+  text-transform: uppercase;
+  color: tomato;
+}
+
 @media only screen and (max-width: 768px) {
   .footer {
     display: flex;
@@ -109,8 +123,8 @@
     position: relative;
     bottom: 0;
     left: 0;
-    height: 800px;
-    padding-bottom: 18px;
+    height: 600px;
+    padding-bottom: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -140,12 +154,14 @@
     height: 150px;
   }
 
-  /* Venkatesh 9663058243 */
-
   .footer__firstContainerLinks {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .footer__secondContainer > h4 {
+    margin-bottom: 10px;
   }
 
   .footer__title {

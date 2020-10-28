@@ -7,7 +7,7 @@
 .about__container {
   color: white;
   margin-top: 200px;
-  padding: 50px;
+  padding: 50px 120px;
   padding-bottom: 200px;
   width: 100vw;
   overflow: hidden;
@@ -28,7 +28,7 @@
   font-size: 24px;
   color: tomato;
   letter-spacing: 1px;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .about__mission > p {
@@ -47,7 +47,7 @@
   font-size: 24px;
   color: tomato;
   letter-spacing: 1px;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .about__vision > p {

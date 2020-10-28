@@ -55,12 +55,12 @@ export const Comp1 = () => {
                       to deliver you an experience of quality.
                       <br />
                       <br />
-                      <span>
+                      {/* <span>
                         “Our primary health care should begin on the farm and in
                         our hearts, and not in some laboratory of the biotech
                         and pharmaceutical companies.”
                         <br />― Gary Hopkins
-                      </span>
+                      </span> */}
                     </p>
 
                     <h4 onClick={() => history.push("/products")}>

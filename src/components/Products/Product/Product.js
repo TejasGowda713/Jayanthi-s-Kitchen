@@ -12,11 +12,11 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 1000,
   },
-  media: {
-    height: 170,
-    width: 300,
-    objectFit: "cover",
-  },
+  // media: {
+  //   height: 170,
+  //   width: 300,
+  //   objectFit: "cover",
+  // },
 });
 
 function Product({ img, title, description, price }) {
@@ -41,7 +41,7 @@ function Product({ img, title, description, price }) {
                   <Card className={classes.root} style={{ ...props }}>
                     <CardActionArea>
                       <CardMedia
-                        className={classes.media}
+                        className="product__imageDetail"
                         image={img}
                         title={title}
                       />
@@ -52,23 +52,76 @@ function Product({ img, title, description, price }) {
             )}
           </VisibilitySensor>
         </div>
-        <div className="product__rightContainer">
-          <p>{description}</p>
-        </div>
-      </div>
-      <div className="product__priceCategory">
-        <Button onClick={() => setSelected(price[0])} variant="outlined">
-          250 gms
-        </Button>
-        <Button onClick={() => setSelected(price[1])} variant="outlined">
-          500 gms
-        </Button>
-        <Button onClick={() => setSelected(price[2])} variant="outlined">
-          1 kg
-        </Button>
-      </div>
 
-      <h6 className="product__price">Price Rs.{selected}</h6>
+        <VisibilitySensor partialVisibility>
+          {({ isVisible }) => (
+            <Spring
+              delay={500}
+              to={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? "translateX(0px)" : "translateX(100px)",
+              }}
+            >
+              {(props) => (
+                <div className="product__rightContainer" style={{ ...props }}>
+                  <p>{description}</p>
+                </div>
+              )}
+            </Spring>
+          )}
+        </VisibilitySensor>
+      </div>
+      <VisibilitySensor partialVisibility>
+        {({ isVisible }) => (
+          <Spring
+            delay={2000}
+            to={{
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
+            {(props) => (
+              <div className="product__priceCategory" style={{ ...props }}>
+                <Button
+                  onClick={() => setSelected(price[0])}
+                  variant="outlined"
+                >
+                  250 gms
+                </Button>
+                <Button
+                  onClick={() => setSelected(price[1])}
+                  variant="outlined"
+                >
+                  500 gms
+                </Button>
+                <Button
+                  onClick={() => setSelected(price[2])}
+                  variant="outlined"
+                >
+                  1 kg
+                </Button>
+              </div>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
+
+      <VisibilitySensor partialVisibility>
+        {({ isVisible }) => (
+          <Spring
+            delay={2000}
+            to={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? "rotateX(0deg)" : "rotateX(180deg)",
+            }}
+          >
+            {(props) => (
+              <h6 className="product__price" style={{ ...props }}>
+                Price Rs.{selected}
+              </h6>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
     </div>
   );
 }

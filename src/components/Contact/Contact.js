@@ -38,3 +38,5 @@ function Contact() {
 }
 
 export default Contact;
+
+// 12.9716 77.5946
