@@ -1,0 +1,10 @@
+.products__card {
+  width: 250px;
+  height: 170px;
+}
+
+.products__cardImage > img {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+}

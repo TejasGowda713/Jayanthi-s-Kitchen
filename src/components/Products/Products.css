@@ -2,6 +2,7 @@
   margin: 0;
   padding-top: 200px;
   min-height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
   background-color: black;
   padding-bottom: 50px;

@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import "./About.css";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about">
       <Header />
       <div className="about__container">
         <div className="about__topContainer">
+          <center>
+            <h2 className="about__containerTitle">something about us !</h2>
+          </center>
+
           <h3>
             As being a family owned business we promise you to offer the best
             nourished products to the family like us.
+          </h3>
+          <h3>
+            For us it’s not just about the bottom line it’s about “culture”,
+            “values”, “commitment to community” and “entrepreneurial spirit”.
           </h3>
           <h3>
             We are here to present the society with the gift of nature packed

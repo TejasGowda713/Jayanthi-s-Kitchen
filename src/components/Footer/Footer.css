@@ -124,7 +124,7 @@
     bottom: 0;
     left: 0;
     height: 600px;
-    padding-bottom: 150px;
+    padding-bottom: 180px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -157,7 +157,11 @@
   .footer__firstContainerLinks {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+  }
+
+  .footer__firstContainerLink {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .footer__secondContainer > h4 {
@@ -234,5 +238,6 @@
     font-size: 8px;
     text-transform: uppercase;
     color: tomato;
+    margin-top: 10px;
   }
 }

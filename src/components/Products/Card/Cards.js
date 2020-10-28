@@ -25,9 +25,9 @@ export default function Cards({ img, title }) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={img} title={title} />
+        <CardMedia className={classes.media} image={img} />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h1">
             {title}
           </Typography>
         </CardContent>

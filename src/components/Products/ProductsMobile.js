@@ -65,6 +65,7 @@ export default function ProductsMobile() {
 
   return (
     <div className={classes.root}>
+      <h2>THE PRODUCT THAT CAN CHANGE YOUR LIFE !</h2>
       <AppBar position="static" color="black">
         <Tabs
           value={value}
@@ -106,7 +107,7 @@ export default function ProductsMobile() {
       </AppBar>
       <TabPanel value={value} index={0}>
         <Product
-          img="/images/black-pepper.jpg"
+          img="/images/desc/pepper plant.jpg"
           title="Black Pepper"
           description="Black pepper is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, the fruit is about 5 mm in diameter and dark red, and contains a single seed, like all drupes."
           price={[200, 500, 800]}
@@ -114,7 +115,7 @@ export default function ProductsMobile() {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Product
-          img="/images/coffee.jpg"
+          img="/images/desc/coffee plantation.jpg"
           title="Coffee"
           description="Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.  Dried coffee seeds are roasted to varying degrees, depending on the desired flavor."
           price={[220, 520, 800]}
@@ -122,7 +123,7 @@ export default function ProductsMobile() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Product
-          img="/images/honey.jpg"
+          img="/images/desc/honey1.jpg"
           title="Honey"
           description="Honey is a sweet, viscous food substance made by honey bees and some related insects. Bees produce honey from the sugary secretions of plants or from secretions of other insects by regurgitation, enzymatic activity, and water evaporation."
           price={[230, 520, 800]}
@@ -130,7 +131,7 @@ export default function ProductsMobile() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Product
-          img="/images/pork.jpg"
+          img="/images/desc/pork-loin_1.jpg"
           title="Pork"
           description="Pork is the culinary name for the meat of a domestic pig. It is the most commonly consumed meat worldwide, with evidence of pig husbandry dating back to 5000 BC. Pork is eaten both freshly cooked and preserved."
           price={[240, 520, 800]}
@@ -138,9 +139,17 @@ export default function ProductsMobile() {
       </TabPanel>
       <TabPanel value={value} index={4}>
         <Product
-          img="/images/white-mushrooms.jpg"
-          title="White Mushrooms"
+          img="/images/desc/Mushroom-farming.jpg"
+          title="Mushroom"
           description="A mushroom or toadstool is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source."
+          price={[250, 520, 800]}
+        />
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <Product
+          img="/images/desc/fff.jpg"
+          title="Pickle"
+          description="On a most general level, pickles are foods soaked in solutions that help prevent spoilage. There are two basic categories of pickles. The first type includes pickles preserved in vinegar, a strong acid in which few bacteria can survive."
           price={[250, 520, 800]}
         />
       </TabPanel>

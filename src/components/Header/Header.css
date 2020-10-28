@@ -18,6 +18,7 @@
   height: 200px;
   width: 200px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .header__options {
@@ -134,6 +135,7 @@
 .headermobile__logo {
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 .headermobile__topOptions {

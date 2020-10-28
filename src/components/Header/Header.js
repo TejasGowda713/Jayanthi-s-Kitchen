@@ -73,7 +73,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Header = () => {
-  const history = useHistory();
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = useState(false);
@@ -121,12 +120,13 @@ export const Header = () => {
     <div className="header">
       {sidebar === true ? (
         <div className="headermobileContainer">
-          <img
-            className="headermobile__logo"
-            src="/images/logo.jpeg"
-            alt=""
-            onClick={() => history.push("/")}
-          />
+          <Link to="/">
+            <img
+              className="headermobile__logo"
+              src="/images/logo.jpeg"
+              alt=""
+            />
+          </Link>
 
           <div className="headermobile__options">
             <IconButton
@@ -174,7 +174,9 @@ export const Header = () => {
         </div>
       ) : (
         <div className="headerContainer">
-          <img className="header__logo" src="/images/logo.jpeg" alt="" />
+          <Link to="/">
+            <img className="header__logo" src="/images/logo.jpeg" alt="" />
+          </Link>
 
           <div className="header__options">
             <div className="header__topOptions">

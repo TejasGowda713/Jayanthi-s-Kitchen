@@ -1,12 +1,18 @@
 .product__container {
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 70px;
   display: flex;
 }
 
 .product__rightContainer {
   flex: 0.8;
   margin-left: 30px;
+}
+
+.product__rightContainer > p {
+  font-size: 19px;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
 }
 
 .product__priceCategory {
@@ -24,6 +30,12 @@
 }
 
 .product__priceCategory > button:hover {
+  background-color: black;
+  color: tomato;
+  cursor: pointer;
+}
+
+.product__priceCategory > button:focus {
   background-color: black;
   color: tomato;
   cursor: pointer;
@@ -52,7 +64,7 @@
 }
 .product__imageDetail {
   width: 280px;
-  height: 170px;
+  height: 200px;
   object-fit: contain;
 }
 

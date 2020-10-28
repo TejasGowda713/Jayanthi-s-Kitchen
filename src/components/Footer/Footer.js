@@ -11,8 +11,8 @@ export const Footer = () => {
         <div className="footer__firstContainer">
           <h1 className="footer__title">Jayanthi's Kitchen</h1>
           <div className="footer__firstContainerLinks">
-            <FacebookIcon />
-            <InstagramIcon />
+            <FacebookIcon className="footer__firstContainerLink" />
+            <InstagramIcon className="footer__firstContainerLink" />
           </div>
         </div>
         <div className="footer__secondContainer">

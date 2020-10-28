@@ -8,7 +8,7 @@ function Banner() {
       <img className="bannerBody__image" src="images/home2.jpg" />
       <p>
         “Our primary health care should begin on the farm and in our hearts, and
-        not in some laboratory of the biotech and pharmaceutical companies.”
+        not in some laboratory of biotech and pharmaceutical companies.”
         <br />
         <br />― Gary Hopkins
       </p>
