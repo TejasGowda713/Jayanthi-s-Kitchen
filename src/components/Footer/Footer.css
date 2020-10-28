@@ -1,64 +1,222 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  padding-bottom: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  /* background-color: rgb(138, 52, 37); */
+  color: #ababab;
+  width: 100vw;
+
+  background-color: #222;
+  /* color: tomato; */
+  border-top: 1px solid lightgray;
+}
+
+.footer__topContainer {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__firstContainer {
+  margin-top: -18px;
+}
+
+.footer__firstContainerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__title {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  /* color: tomato; */
+  border-bottom: 1px solid #545454;
+}
+
+.footer__thirdContainer {
+  margin-top: 15px;
+}
+
+.footer__thirdContainerMail {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.footer__thirdContainerMail > input {
+  border: 1px solid grey;
+  border-radius: 3px;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+}
+
+.footer__thirdContainerMail > .MuiSvgIcon-root {
+  background-color: #5fbd74;
+  color: white !important;
+  height: 30px;
+  padding: 5px;
+  width: 35px;
+}
+
+.footer__bottomContainer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  background-color: #333333;
+  color: #696969;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 120px;
+  padding-right: 80px;
+}
+
+.footer__copyRight {
+  font-family: "Lato";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     bottom: 0;
     left: 0;
-    height: 270px;
-    padding-top: 34px;
+    height: 800px;
     padding-bottom: 18px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
-    background-color: #444444;
+    /* background-color: rgb(138, 52, 37); */
     color: #ababab;
-}
 
-.footer__topContainer {
+    background-color: #222;
+    /* color: tomato; */
+    border-top: 1px solid lightgray;
+    width: 100vw;
+  }
+
+  .footer__topContainer {
+    padding-top: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
+    width: 100vw;
+  }
 
-.footer__firstContainerLinks {
+  .footer__firstContainer,
+  .footer__secondContainer,
+  .footer__thirdContainer {
+    margin-top: -18px;
+    width: 80vw;
+    height: 150px;
+  }
+
+  /* Venkatesh 9663058243 */
+
+  .footer__firstContainerLinks {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
+  }
 
-
-.footer__title {
+  .footer__title {
     margin-bottom: 30px;
     padding-bottom: 15px;
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     color: #ffffff;
+    /* color: tomato; */
     border-bottom: 1px solid #545454;
-}
+  }
 
-.footer__thirdContainer {
+  .footer__thirdContainer {
     margin-top: 15px;
-}
+  }
 
-.footer__thirdContainerMail {
+  .footer__thirdContainerMail {
     display: flex;
     align-items: center;
-    margin-top: 10px;
-}
+    margin-top: 8px;
+  }
 
-.footer__thirdContainerMail > input {
+  .footer__thirdContainerMail > input {
     border: 1px solid grey;
     border-radius: 3px;
     height: 30px;
     padding: 5px;
     outline: none;
-}
+  }
 
-.footer__thirdContainerMail > .MuiSvgIcon-root {
+  .footer__thirdContainerMail > .MuiSvgIcon-root {
     background-color: #5fbd74;
     color: white !important;
     height: 30px;
     padding: 5px;
-    width:35px;
+    width: 35px;
+  }
+
+  .footer__bottomContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    background-color: #333333;
+    color: #696969;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer__copyRight {
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .footer__logo {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: tomato;
+  }
 }

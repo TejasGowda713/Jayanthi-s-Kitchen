@@ -3,8 +3,10 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
 import "./Home.css";
+import { useHistory } from "react-router-dom";
 
 export const Comp1 = () => {
+  const history = useHistory();
   return (
     <div>
       <section
@@ -16,31 +18,52 @@ export const Comp1 = () => {
           {({ isVisible }) => (
             <Spring
               delay={300}
-              // from={{ opacity: 0, transform: "translateY(200px)" }}
-              // to={{ opacity: 1, transform: "translateY(0px)" }}
               to={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible
-                  ? "translateY(-50px)"
+                  ? "translateY(-100px)"
                   : "translateY(200px)",
               }}
             >
               {(props) => (
                 <div className="homeContainer" style={{ ...props }}>
                   <div className="home__leftContainer">
-                    <h1>Welcome to</h1>
-                    <h2>Jayanthi's Kitchen</h2>
+                    <Spring
+                      delay={800}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                        transform: isVisible
+                          ? "translateX(0px)"
+                          : "translateX(-500px)",
+                      }}
+                    >
+                      {(props) => (
+                        <div
+                          className="home__leftContainerheading"
+                          style={{ ...props }}
+                        >
+                          <h1>Welcome to</h1>
+                          <h2>Jayanthi's Kitchen</h2>
+                        </div>
+                      )}
+                    </Spring>
                     <p>
-                      Our dream is to offer the best natural products to promote
-                      a healthy lifestyle in the community. Arya’s Aroma is a
-                      family owned business where we also have an organic farm
-                      near Solur, Bangalore which has been certified by the
-                      Karnataka State Seed And Organic Certification Agency. We
-                      are excited to bring a sense of discovery and adventure
-                      into food shopping.
+                      Jayanthi’s Kitchen is a family owned business where we
+                      grow, prepare and present in front of you. Our vision is
+                      to present the best natural and home-made products to
+                      carry a healthy lifestyle in the community. We are excited
+                      to deliver you an experience of quality.
+                      <br />
+                      <br />
+                      <span>
+                        “Our primary health care should begin on the farm and in
+                        our hearts, and not in some laboratory of the biotech
+                        and pharmaceutical companies.”
+                        <br />― Gary Hopkins
+                      </span>
                     </p>
 
-                    <h4>
+                    <h4 onClick={() => history.push("/products")}>
                       Our products <ArrowRightAltIcon />
                     </h4>
                   </div>

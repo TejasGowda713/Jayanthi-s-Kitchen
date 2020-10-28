@@ -1,0 +1,8 @@
+.products__container {
+  margin: 0;
+  padding-top: 200px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  padding-bottom: 50px;
+}

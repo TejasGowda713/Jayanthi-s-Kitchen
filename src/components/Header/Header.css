@@ -1,92 +1,189 @@
 .headerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  background-color: black;
+
+  width: 100vw;
+  overflow: hidden;
 }
 
 .header__logo {
-    height: 200px;
-    width: 200px;
-    object-fit: contain;
-
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
 }
 
-
 .header__options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header__topOptions {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.header__topOptions > a {
+  text-decoration: none;
 }
 
 .header__option {
-    font-size: 20px;
-    padding: 40px 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #5e5a54;
-    transition: all 0.5s;
-    background-color: transparent;
-    line-height: 1.50;
-    font-weight: bold;
-    margin: 0 auto;
-    cursor: pointer;
+  font-size: 20px;
+  padding: 40px 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* color: #5e5a54; */
+  color: tomato;
+  transition: all 0.5s;
+  background-color: transparent;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .header__option:hover {
-    color: tomato;
+  color: white;
 }
 
 .header__bottomOption {
-    display: flex;
-    align-items: center;
-    background-color: #5fbd74;
-    color: white;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    margin-left: 150px;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 4px;
-    width: auto;
+  display: flex;
+  align-items: center;
+  background-color: #5fbd74;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: auto;
+}
+
+.header__bottomOption:hover {
+  background-color: black;
+  color: tomato;
+  cursor: pointer;
 }
 
 .header__bottomOption > .MuiSvgIcon-root {
-    color: grey !important;
-    margin-right: 10px;
+  color: grey !important;
+  margin-right: 10px;
 }
 
 .header__bottomOption:hover > .MuiSvgIcon-root {
-    animation: phone .5s ;
+  animation: phone 0.5s;
+  cursor: pointer;
 }
 
 @keyframes phone {
-    0% {
-        transform: translateX(-5px);
-    }
-    25% {
-        transform: translateX(5px);
-    }
-    50% {
-        transform: translateX(-5px);
-    }
-    75% {
-        transform: translateX(5px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.headerBody {
-    height: 500px;
-    width: 100%;
-    background-color: turquoise;
+.sidebar__closebtn {
+  width: 20%;
+  color: white !important;
+}
+
+.headermobileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  background-color: black;
+}
+
+.menubtn {
+  position: absolute;
+  /* left: 450%; */
+  right: -210px;
+  color: white;
+  font-size: 35px !important;
+}
+
+.headermobile__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.headermobile__topOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headermobile__option {
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* color: #5e5a54; */
+  color: tomato;
+  transition: all 0.5s;
+  background-color: transparent;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.headermobile__option:hover {
+  color: white;
+}
+
+.headermobile__bottomOption {
+  display: flex;
+  align-items: center;
+  background-color: #5fbd74;
+  color: white;
+  text-align: center;
+  height: 30px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+  width: auto;
+  margin: 0 30px;
+  position: absolute;
+  top: 250px;
+}
+
+.headermobile__bottomOption > .MuiSvgIcon-root {
+  color: grey !important;
+  margin-right: 10px;
+}
+
+.headermobile__bottomOption:hover > .MuiSvgIcon-root {
+  animation: phone 0.5s;
 }

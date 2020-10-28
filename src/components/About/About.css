@@ -1,0 +1,122 @@
+.about {
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.about__container {
+  color: white;
+  margin-top: 200px;
+  padding: 50px;
+  padding-bottom: 200px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.about__topContainer > h3 {
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.about__mission {
+  margin: 80px 0;
+}
+
+.about__mission > center > h4 {
+  font-size: 24px;
+  color: tomato;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.about__mission > p {
+  margin: 0 100px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.about__vision {
+  margin: 80px 0;
+}
+
+.about__vision > center > h4 {
+  font-size: 24px;
+  color: tomato;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.about__vision > p {
+  margin: 0 100px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    background-color: black;
+    min-height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+  }
+
+  .about__container {
+    color: white;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+
+  .about__topContainer > h3 {
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+  }
+
+  .about__mission {
+    margin: 80px 0;
+  }
+
+  .about__mission > center > h4 {
+    font-size: 24px;
+    color: tomato;
+    letter-spacing: 1px;
+    margin: 15px 0;
+  }
+
+  .about__mission > p {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    width: 105%;
+  }
+
+  .about__vision {
+    margin: 80px 0;
+  }
+
+  .about__vision > center > h4 {
+    font-size: 24px;
+    color: tomato;
+    letter-spacing: 1px;
+    margin: 15px 0;
+  }
+
+  .about__vision > p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+  }
+}
