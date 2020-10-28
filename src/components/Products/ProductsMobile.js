@@ -71,7 +71,7 @@ export default function ProductsMobile() {
           onChange={handleChange}
           variant="scrollable"
           scrollButtons="on"
-          indicatorColor="primary"
+          indicatorColor="secondary"
           textColor="primary"
           aria-label="scrollable force tabs example"
           style={{ backgroundColor: "black" }}
