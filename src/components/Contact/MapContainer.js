@@ -4,10 +4,10 @@ import "./MapContainer.css";
 import "leaflet/dist/leaflet.css";
 
 function MapContainer() {
-  const position = [12.97, 77.59];
   useEffect(() => {
     var mapOptions = {
-      center: [12.9716, 77.5946],
+      // center: [12.9716, 77.5946],
+      center: [12.446432, 75.932858],
       zoom: 16,
     };
     // Creating a map object
@@ -37,7 +37,7 @@ function MapContainer() {
       icon: customIcon,
     };
     // Creating a Marker
-    var marker = L.marker([12.9716, 77.5946], markerOptions);
+    var marker = L.marker([12.446432, 75.932858], markerOptions);
 
     // Adding popup to the marker
     marker.bindPopup("Jayanthi's Kitchen").openPopup();

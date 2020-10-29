@@ -119,7 +119,7 @@ function Products() {
         <ProductsMobile />
       ) : (
         <div className="products__container">
-          <h2 style={{ color: "tomato", marginLeft: "50px" }}>
+          <h2 className="products__containerHeading">
             THE PRODUCT THAT CAN CHANGE YOUR LIFE !
           </h2>
           <div className={classes.root}>
@@ -164,7 +164,7 @@ function Products() {
             <TabPanel value={value} index={0}>
               <Product
                 img="/images/desc/pepper plant.jpg"
-                title="Black Pepper"
+                title="Pepper"
                 description="Black pepper is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, the fruit is about 5 mm in diameter and dark red, and contains a single seed, like all drupes."
                 price={[200, 500, 800]}
               />

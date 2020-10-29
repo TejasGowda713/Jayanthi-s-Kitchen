@@ -103,6 +103,10 @@ export default function ProductsMobile() {
             }
             {...a11yProps(4)}
           />
+          <Tab
+            label={<Cards img="/images/galorean.jpg" title="Pickle" />}
+            {...a11yProps(5)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

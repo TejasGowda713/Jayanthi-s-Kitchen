@@ -22,6 +22,32 @@ const useStyles = makeStyles({
 function Product({ img, title, description, price }) {
   const classes = useStyles();
   const [selected, setSelected] = useState(price[0]);
+  const pickleTypes = [
+    {
+      name: "Tuna",
+      price: [250, 500, 1000],
+    },
+    {
+      name: "Prawn",
+      price: [375, 750, 1500],
+    },
+    {
+      name: "Mushroom",
+      price: [250, 500, 1000],
+    },
+    {
+      name: "Bamboo",
+      price: [250, 500, 1000],
+    },
+    {
+      name: "BitterLime",
+      price: [250, 500, 1000],
+    },
+    {
+      name: "Pork",
+      price: [250, 500, 1000],
+    },
+  ];
   return (
     <div className="product">
       <div className="product__container">
@@ -81,24 +107,71 @@ function Product({ img, title, description, price }) {
           >
             {(props) => (
               <div className="product__priceCategory" style={{ ...props }}>
-                <Button
-                  onClick={() => setSelected(price[0])}
-                  variant="outlined"
-                >
-                  250 gms
-                </Button>
-                <Button
-                  onClick={() => setSelected(price[1])}
-                  variant="outlined"
-                >
-                  500 gms
-                </Button>
-                <Button
-                  onClick={() => setSelected(price[2])}
-                  variant="outlined"
-                >
-                  1 kg
-                </Button>
+                {title === "Pickle" ? (
+                  <div className="product__pickle">
+                    <h3>Pickle Types</h3>
+                    {pickleTypes.map((item) => (
+                      <div className="pickle__type">
+                        <div className="pickle__types">
+                          <Button
+                            onClick={() => setSelected(item.price[0])}
+                            variant="outlined"
+                            className="pickleTypes__btn"
+                          >
+                            {item.name}
+                          </Button>
+                        </div>
+                        <div className="pickle__prices">
+                          <Button
+                            onClick={() => setSelected(item.price[0])}
+                            variant="outlined"
+                            className="price__btn"
+                          >
+                            250 gms
+                          </Button>
+                          <Button
+                            onClick={() => setSelected(item.price[1])}
+                            variant="outlined"
+                            className="price__btn"
+                          >
+                            500 gms
+                          </Button>
+                          <Button
+                            onClick={() => setSelected(item.price[2])}
+                            variant="outlined"
+                            className="price__btn"
+                          >
+                            1 kg
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div>
+                    <Button
+                      onClick={() => setSelected(price[0])}
+                      variant="outlined"
+                      className="price__btn"
+                    >
+                      250 gms
+                    </Button>
+                    <Button
+                      onClick={() => setSelected(price[1])}
+                      variant="outlined"
+                      className="price__btn"
+                    >
+                      500 gms
+                    </Button>
+                    <Button
+                      onClick={() => setSelected(price[2])}
+                      variant="outlined"
+                      className="price__btn"
+                    >
+                      1 kg
+                    </Button>
+                  </div>
+                )}
               </div>
             )}
           </Spring>
