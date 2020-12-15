@@ -16,12 +16,15 @@ export const Footer = () => {
         <div className="footer__firstContainer">
           <h1 className="footer__title">Jayanthi's Kitchen</h1>
           <div className="footer__firstContainerLinks">
-            <a href="https://www.facebook.com/profile.php?id=100057079960776">
+            <a
+              href="https://www.facebook.com/Jayanthis-Kitchen-100450941959102"
+              target="_blank"
+            >
               <FacebookIcon className="footer__firstContainerLink" />
             </a>
-            <a href="https://www.instagram.com/jayanthyskitchen/">
+            {/* <a href="https://www.instagram.com/jayanthyskitchen/">
               <InstagramIcon className="footer__firstContainerLink" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="footer__secondContainer">

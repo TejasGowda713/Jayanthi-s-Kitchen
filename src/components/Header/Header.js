@@ -192,7 +192,7 @@ export const Header = () => {
             </div>
             <div className="header__bottomOptions">
               <div className="header__bottomOption">
-                <PhoneIcon /> 123456789
+                <PhoneIcon /> <tel>98803 82259</tel>
               </div>
             </div>
           </div>

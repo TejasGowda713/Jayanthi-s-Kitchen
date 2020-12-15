@@ -2,11 +2,14 @@
   margin-top: 50px;
   margin-left: 70px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .product__rightContainer {
   flex: 0.8;
   margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product__rightContainer > p {
@@ -59,6 +62,16 @@
   width: 150px;
 }
 
+.honeyTypes__btn {
+  background-color: black !important;
+  border-radius: 30px !important;
+  text-transform: inherit;
+  margin-right: 40px !important;
+  color: tomato !important;
+  border: 1px solid rgb(43, 42, 42) !important;
+  width: 200px;
+}
+
 .price__btn {
   background-color: white !important;
   border-radius: 30px !important;
@@ -68,13 +81,24 @@
   width: 100px;
 }
 
-.price__btn:hover {
-  background-color: black;
-  color: tomato;
+.honeyprice__btn {
+  background-color: white !important;
+  border-radius: 30px !important;
+  text-transform: inherit;
+  margin: 0 5px !important;
+  color: "black" !important;
+  width: 150px;
+}
+
+.price__btn:hover,
+.honeyprice__btn:hover {
+  background-color: black !important;
+  color: tomato !important;
   cursor: pointer;
 }
 
-.price__btn:focus {
+.price__btn:focus,
+.honeyprice__btn:focus {
   background-color: black !important;
   color: tomato !important;
   cursor: pointer;
@@ -95,7 +119,12 @@
   color: black;
 }
 
-.product__price:hover {
+.egg__price {
+  width: 200px;
+}
+
+.product__price:hover,
+.egg__price:hover {
   border: none;
   background-color: black;
   color: tomato;
@@ -107,7 +136,7 @@
   object-fit: contain;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 888px) {
   .product__container {
     display: flex;
     flex-direction: column;
@@ -144,6 +173,9 @@
     background-color: white;
     color: black;
     margin-bottom: 35px;
+  }
+  .egg__price {
+    width: 200px;
   }
   .product__imageDetail {
     width: 100vw;

@@ -31,7 +31,7 @@ function Contact() {
         <div className="contact__rightContainer">
           <div className="contact__phone">
             <h4>Phone Number :</h4>
-            <p className="contact__para">1234785858</p>
+            <p className="contact__para">9880382259</p>
           </div>
           <div className="contact__website">
             <h4>Website :</h4>

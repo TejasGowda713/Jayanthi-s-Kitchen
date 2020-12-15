@@ -17,3 +17,10 @@
   color: "tomato";
   margin-left: 50px;
 }
+
+.MuiTabs-scroller {
+  flex: 1 1 auto;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
